@@ -60,14 +60,15 @@ background: var(--color-secondary);
 /*navbar and dropdown style */
 .navbar, .dropdown-menu{
     background-color: var(--color-primary)!important;
+    color:var(--color-white) !important;
    }
    /*navbar brand of the website */
    .navbar-brand{
     font-weight: 600 !important;
-    color: var(--color-white) !important;
     font-size: 1.5rem;
+   
 }
-   /*log0 of the website */
+   /*log0 varof the website */
 .LogoImg{
     width: 2.3rem;
     border-radius: 50%;
@@ -85,7 +86,7 @@ background: var(--color-secondary);
  
 }
  /*navigation links, and navbar brand color when we hover over*/
-.nav-link:hover, .dropdown-item:hover, .navbar-brand{
+.nav-link:hover, .dropdown-item:hover{
     color: var(--color-secondary) !important;
     
 }
@@ -104,7 +105,7 @@ border: none !important;
  /*navigation  dropdown*/
 .dropdown-item{
     color: var(--color-white) !important;
-    background-color: none !important;
+   
     text-align: center;
     font-weight: 600;
 }
