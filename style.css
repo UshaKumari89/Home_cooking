@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap');
+/*General styles */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+/*create variable for color and transition for reuse */
+:root {
+    --color-white:#ffffff;
+    --color-black:#000000;
+    --color-secondary:#1F3044;
+    --color-primary:#FB9039;
+    --transition: all 400ms ease;
+  
+  
+}
+
+/*styles on body */
+body{
+    font-family: 'Roboto', sans-serif !important;
+    background: var(--color-primary);
+}
+/*Navigation section start here */
+#navigationBar{
+    box-shadow: 2px 3px 5px grey;
+    
+}
+/*upper section of header*/
+header{
+    background-color: var(--color-secondary) !important; 
+    height: 3rem;
+    line-height: 2.5;
+    color: var(--color-white);
+    width: 100%;
+    font-size: 1.2rem;
+
+}
+/*style for icon in header*/
+span i {
+background-color:var(--color-white);
+border-radius: 50%;
+color:var(--color-secondary) !important ;
+padding: .5rem;
+margin-bottom: .4rem;
+cursor: pointer;
+transition: var(--transition)
+}
+/*style for icon hover over in header**/
+
+span i:hover{
+color:var(--color-white) !important; 
+background: var(--color-secondary); 
+}
+/*logo and navigation  section of header*/
+
+/*navbar and dropdown style */
+.navbar, .dropdown-menu{
+    background-color: var(--color-primary)!important;
+   }
+   /*navbar brand of the website */
+   .navbar-brand{
+    font-weight: 600 !important;
+    color: var(--color-white) !important;
+    font-size: 1.5rem;
+}
+   /*log0 of the website */
+.LogoImg{
+    width: 2.3rem;
+    border-radius: 50%;
+    border:3px solid var(--color-secondary) !important;
+    
+}
+
+   /*navigation links of the page*/
+
+.nav-link{
+    color: var(--color-white) !important;
+    padding-left: 2rem !important;
+    font-size: 1.1rem;
+    font-weight: 600 !important;
+ 
+}
+ /*navigation links, and navbar brand color when we hover over*/
+.nav-link:hover, .dropdown-item:hover, .navbar-brand{
+    color: var(--color-secondary) !important;
+    
+}
+ /*navigation toggler button*/
+.navbar-toggler {
+background: var(--color-primary);
+color: var(--color-white) !important;
+outline: none !important;
+border: none !important;
+
+}
+ /*navigation toggler button menu*/
+.dropdown-menu[data-bs-popper] {
+    margin-top:.5rem;
+}
+ /*navigation  dropdown*/
+.dropdown-item{
+    color: var(--color-white) !important;
+    background-color: none !important;
+    text-align: center;
+    font-weight: 600;
+}
+ /*navigation  dropdown hover over*/
+.dropdown-item:hover{
+    background: none;
+}
+ /*navigation  links*/
+.nav-link {
+    text-align: center; 
+}
+
+/*Navigation section end here */
+
+
+/*Banner section start here */
+ /*banner section style on id banner*/
+#banner{
+height: 85vh;
+background-image: linear-gradient(to bottom,
+    rgba(0,0,0, 0.6),
+    rgba(0,0,0,0.6)),
+    url(images/banner.jpg);
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 20px;
+  color: #ffffff;
+ 
+}
+ /*banner section style on class baner*/
+.banner{
+    margin:8rem auto;
+    font-size: 1rem ;
+    line-height: 2;
+    padding:1rem
+}
+
+ /*banner section button*/
+.btn{
+    color:var(--color-white);
+    background: var(--color-primary)!important;
+    transition: var(--transition);
+}
+ /*banner section button hover over*/
+.btn:hover{
+    background: var(--color-secondary)!important;
+    color:var(--color-white);
+}
+/*Banner section end  here */
