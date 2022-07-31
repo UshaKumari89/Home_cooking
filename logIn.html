@@ -19,7 +19,7 @@
     <!-- stylesheet link -->
     <link rel="stylesheet" href="style.css" />
 
-    <title>Hom cooking</title>
+    <title>Home cooking</title>
   </head>
 
   <body>
@@ -115,39 +115,98 @@
         </div>
       </nav>
     </main>
-    <!--navigation section ends here-->
+  <!--navigation section ends here-->
+  <!--login form section starts here-->
+    <div class="container">
 
-    <!--banner section starts here-->
-    <section>
-      <div id="banner">
-        <div class="col-md-6 col-sm-12 banner text-center">
-          <!--banner section header-->
-          <h1>Home Cooking</h1>
-          <!--banner section paragraph-->
-          <p>
-            Preparing healthy meals at home can support your immune system and
-            reduce the risk of illnesses such as heart disease, cancer, high
-            blood pressure, and diabetes. It can give you more energy, improve
-            how you sleep at night, and help you better manage health problems.
-          </p>
-          <!--banner section button-->
-          <button class="btn">Read More</button>
-        </div>
-      </div>
-    </section>
-    <!--banner section ends here-->
+        <form id="form">
+        <h2>Register here</h2>
+            <img src="images/img_avatar2.png" alt="Avatar" class="avatar">
+      
+          
+           <!-- /** 
+             * ! user name Input
+             **/ -->
+          <div>
+            <label for="userFirstname">First Name</label>
+            <i class="fa-solid fa-user"></i>
+            <input type="text" name="userFirstName" id="userFirstName" placeholder = "John " />
+            <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+            <i class="fa-solid fa-circle-check success-icon"></i>
+            <div class="error"></div>
+          </div>
+           <!-- /** 
+             * ! user Last Input
+             **/ -->
+          <div>
+              <label for="userLastname">Last Name</label>
+              <i class="fa-solid fa-user"></i>
+              <input type="text" name="userLastName" id="userLastName" placeholder = "Deo" />
+              <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+              <i class="fa-solid fa-circle-check success-icon"></i>
+              <div class="error"></div>
+            </div>
+          <!-- /** 
+             * ! Email Input
+             **/ -->
+          <div>
+            <label for="email">Email</label>
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" name="email" id="email" placeholder = "xyz@gmail.com"/>
+            <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+            <i class="fa-solid fa-circle-check success-icon"></i>
+            <div class="error"></div>
+          </div>
+  
+          <!-- /** 
+             * ! Password Input
+             **/ -->
+          <div>
+            <label for="password">Password</label>
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" name="password" id="password" placeholder = "Password"/>
+            <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+            <i class="fa-solid fa-circle-check success-icon"></i>
+            <div class="error"></div>
+          </div>
+          <button type="submit" id = "submit" class = "btn mt-3">Log In</button>
+        </form>
+    </div>
 
-    <!-- bootstrap javascript -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-      crossorigin="anonymous"
-    ></script>
-    <script src="index.js"></script>
-  </body>
-</html>
+    
+
+  <!--login form section starts here-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- bootstrap javascript -->
+        <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"
+      ></script>
+      <script src="index.js"></script>
+    </body>
+  </html>

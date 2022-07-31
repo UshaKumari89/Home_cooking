@@ -14,6 +14,8 @@
     --color-black:#000000;
     --color-secondary:#1F3044;
     --color-primary:#FB9039;
+   --color-danger:rgb(232, 37, 37);
+    --color-success:rgb(8, 138, 8);
     --transition: all 400ms ease;
   
   
@@ -149,6 +151,10 @@ background-image: linear-gradient(to bottom,
     color:var(--color-white);
     background: var(--color-primary)!important;
     transition: var(--transition);
+    border: 1px solid transparent !important;
+    outline: #FB9039;
+  
+
 }
  /*banner section button hover over*/
 .btn:hover{
@@ -156,3 +162,89 @@ background-image: linear-gradient(to bottom,
     color:var(--color-white);
 }
 /*Banner section end  here */
+
+
+
+
+
+
+
+/*log in page starts here */
+
+/*form section starts here */
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin: 3rem auto;
+    background:var(--color-white);
+    border-radius: 1rem;
+   }
+   form h2{
+   margin: .2rem auto .9rem;
+   color:var(--color-secondary) 
+    }
+   img.avatar {
+    width: 10rem;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  label {
+    display: block;
+    margin-bottom: 2px;
+    color: var(--color-secondary);
+  }
+  form div input {
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    outline: none;
+    border: 2px solid var(--color-primary);
+    padding: 0 30px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  form div {
+    position: relative;
+    margin-bottom: 5px;
+  }
+  
+  input:focus {
+    border: 2px solid var(--color-secondary);
+  }
+  form div i {
+    position: absolute;
+    padding: 10px;
+    color:var(--color-secondary);
+    font-size: 1.25rem;
+  
+  }
+  
+  .failure-icon,
+.error {
+  color: var(--color-danger);
+}
+
+.success-icon {
+  color: var(--color-sucess);
+}
+
+.error {
+  font-size: 14.5px;
+  margin-top: 2px;
+}
+.success-icon,
+.failure-icon {
+  right: 0;
+  opacity: 0;
+}
+#submit{
+  border: transparent !important;
+  outline:transparent !important;
+  font-weight: 600;
+}
+ 
