@@ -248,3 +248,158 @@ form {
   font-weight: 600;
 }
  
+
+
+a,
+a:active,
+a:focus {
+    color: #333;
+    text-decoration: none;
+    transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-duration: .2s;
+    -ms-transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    -webkit-transition-duration: .2s;
+    -o-transition-duration: .2s;
+}
+
+
+
+
+
+/*---------footer---------*/
+footer {
+background-color:var(--color-secondary);
+color: #fff;
+padding: 2.5rem 0 1rem 0;
+font-size: 17px;
+margin: 3rem 0 0 0
+
+
+}
+/*footer  headings */
+footer h4 {
+font-size: 1.5rem;
+font-weight: 600;
+letter-spacing: 1px;
+display: inline-block;
+margin-bottom: 2px;
+
+}
+/*footer  contact section */
+.contact-footer li i {
+position: absolute;
+left: 0;
+} 
+.contact-footer li {
+padding-left: 40px;
+position: relative;
+margin-bottom: 1.2rem;
+}
+
+/*footer links section */
+footer a {
+color: #fff;
+}
+/*footer links hover */
+footer a:hover {
+color: var(--color-primary);
+}
+/*footer title */
+.footer-title {
+border-bottom: 3px solid var(--color-primary);
+padding-bottom: 1.2rem;
+margin-bottom: 2rem;
+}
+.footer-title i {
+  background: var(--color-white);
+  color: var(--color-secondary);
+}
+/*footer list items  */
+ul.footer-social {
+float: right;
+}
+
+ul.footer-social li {
+display: inline;
+margin-right: 16px;
+}
+
+ul.footer-social i {
+width: 2rem;
+height:2rem;
+background: var(--color-white);
+color:var(--color-black);
+text-align: center;
+line-height: 2rem;
+border-radius: 50%;
+font-size: 1.2rem;
+transition: var(--transition);
+font-weight: 800;
+}
+
+ul.footer-social li:last-child {
+margin-right: 0px;
+}
+
+ul.footer-social i:hover {
+background:var(--color-primary);
+color: #fff;
+}
+/*footer open hour table */
+.footer-links li {
+margin-bottom: 1.2rem;
+}
+/*footer open hour table */
+footer .table td:first-child {
+font-weight: 600;
+padding-left: 33px;
+}
+
+footer .table td:last-child {text-align: right;}
+footer .table td {
+padding: 0px;
+border: 0;
+}
+
+footer .table tr {
+}
+
+footer .table td i {
+position: absolute;
+left: 0px;
+font-size: 21px;
+top: 6px;
+}
+
+footer .table td {
+position: relative;
+padding: 4px 0;
+color: white;
+}
+.footer-logo td {
+padding-right: 4px !important;
+}
+
+.footer-logo td:last-child {
+padding-right: 0px !important;
+}
+/*footer bottom section */
+footer hr {
+border-color: #9294a0;
+}
+
+.footer-bottom p {
+text-align: right;
+}
+.footer-bottom {
+margin-top: 30px;
+}
+.open-hours hr {
+margin: 30px 0;
+}
+
