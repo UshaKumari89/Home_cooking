@@ -1,167 +1,613 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap');
+
 /*General styles */
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 
 }
+
 /*create variable for color and transition for reuse */
 :root {
-    --color-white:#ffffff;
-    --color-black:#000000;
-    --color-secondary:#1F3044;
-    --color-primary:#FB9039;
-   --color-danger:rgb(232, 37, 37);
-    --color-success:rgb(8, 138, 8);
-    --transition: all 400ms ease;
-  
-  
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-secondary: #1F3044;
+  --color-primary: #65929b;
+  --color-danger: rgb(232, 37, 37);
+  --color-success: rgb(8, 138, 8);
+  --transition: all 400ms ease;
+
+
 }
 
 /*styles on body */
-body{
-    font-family: 'Roboto', sans-serif !important;
-    background: var(--color-primary);
+body {
+  font-family: 'Roboto', sans-serif !important;
+  background: var(--color-primary);
 }
+
 /*Navigation section start here */
-#navigationBar{
-    box-shadow: 2px 3px 5px grey;
-    
-}
-/*upper section of header*/
-header{
-    background-color: var(--color-secondary) !important; 
-    height: 3rem;
-    line-height: 2.5;
-    color: var(--color-white);
-    width: 100%;
-    font-size: 1.2rem;
+#navigationBar {
+  box-shadow: 2px 3px 5px grey;
 
 }
+
+/*upper section of header*/
+header {
+  background-color: var(--color-secondary) !important;
+  height: 3rem;
+  line-height: 2.5;
+  color: var(--color-white);
+  width: 100%;
+  font-size: 1.2rem;
+
+}
+
+.header-right {
+  margin-left: 2rem;
+}
+
 /*style for icon in header*/
 span i {
-background-color:var(--color-white);
-border-radius: 50%;
-color:var(--color-secondary) !important ;
-padding: .5rem;
-margin-bottom: .4rem;
-cursor: pointer;
-transition: var(--transition)
+  background-color: var(--color-white);
+  border-radius: 50%;
+  color: var(--color-secondary) !important;
+  padding: .4rem;
+  margin-bottom: .4rem;
+  cursor: pointer;
+  transition: var(--transition);
+  margin-right: 1.3rem;
 }
+
 /*style for icon hover over in header**/
 
-span i:hover{
-color:var(--color-white) !important; 
-background: var(--color-secondary); 
+span i:hover {
+  color: var(--color-white) !important;
+  background: var(--color-secondary);
 }
+
 /*logo and navigation  section of header*/
 
 /*navbar and dropdown style */
-.navbar, .dropdown-menu{
-    background-color: var(--color-primary)!important;
-    color:var(--color-white) !important;
-   }
-   /*navbar brand of the website */
-   .navbar-brand{
-    font-weight: 600 !important;
-    font-size: 1.5rem;
-   
-}
-   /*log0 varof the website */
-.LogoImg{
-    width: 2.3rem;
-    border-radius: 50%;
-    border:3px solid var(--color-secondary) !important;
-    
+.navbar,
+.dropdown-menu {
+  background-color: var(--color-primary) !important;
+  color: var(--color-white) !important;
 }
 
-   /*navigation links of the page*/
+/*navbar brand of the website */
+.navbar-brand {
+  font-weight: 600 !important;
+  font-size: 1.5rem;
+  color: var(--color-white) !important
+}
 
-.nav-link{
-    color: var(--color-white) !important;
-    padding-left: 2rem !important;
-    font-size: 1.1rem;
-    font-weight: 600 !important;
- 
-}
- /*navigation links, and navbar brand color when we hover over*/
-.nav-link:hover, .dropdown-item:hover{
-    color: var(--color-secondary) !important;
-    
-}
- /*navigation toggler button*/
-.navbar-toggler {
-background: var(--color-primary);
-color: var(--color-white) !important;
-outline: none !important;
-border: none !important;
+/*log0 varof the website */
+.LogoImg {
+  width: 2.3rem;
+  border-radius: 50%;
+  border: 3px solid var(--color-secondary) !important;
 
 }
- /*navigation toggler button menu*/
-.dropdown-menu[data-bs-popper] {
-    margin-top:.5rem;
-}
- /*navigation  dropdown*/
-.dropdown-item{
-    color: var(--color-white) !important;
-   
-    text-align: center;
-    font-weight: 600;
-}
- /*navigation  dropdown hover over*/
-.dropdown-item:hover{
-    background: none;
-}
- /*navigation  links*/
+
+/*navigation links of the page*/
+
 .nav-link {
-    text-align: center; 
+  color: var(--color-white) !important;
+  padding-left: 2rem !important;
+  font-size: 1.1rem;
+  font-weight: 600 !important;
+
+}
+
+/*navigation links, and navbar brand color when we hover over*/
+.nav-link:hover,
+.dropdown-item:hover {
+  color: var(--color-secondary) !important;
+
+}
+
+/*navigation toggler button*/
+.navbar-toggler {
+  background: var(--color-primary);
+  color: var(--color-white) !important;
+  outline: none !important;
+  border: none !important;
+
+}
+
+/*navigation toggler button menu*/
+.dropdown-menu[data-bs-popper] {
+  margin-top: .5rem;
+}
+
+/*navigation  dropdown*/
+.dropdown-item {
+  color: var(--color-white) !important;
+
+  text-align: center;
+  font-weight: 600;
+}
+
+/*navigation  dropdown hover over*/
+.dropdown-item:hover {
+  background: none;
+}
+
+/*navigation  links*/
+.nav-link {
+  text-align: center;
 }
 
 /*Navigation section end here */
 
 
 /*Banner section start here */
- /*banner section style on id banner*/
-#banner{
-height: 85vh;
-background-image: linear-gradient(to bottom,
-    rgba(0,0,0, 0.6),
-    rgba(0,0,0,0.6)),
+/*banner section style on id banner*/
+.baner_index {
+  height: 85vh;
+  background-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)),
     url(images/banner.jpg);
-  background-size:cover;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding-top: 20px;
   color: #ffffff;
+
+}
+
+/*banner section style on class baner*/
+.banner {
+  margin: 8rem auto;
+  font-size: 1rem;
+  line-height: 2;
+  padding: 1rem
+}
+
+/*banner section button*/
+.btn {
+  color: var(--color-white) !important;
+  background: var(--color-secondary) !important;
+  transition: var(--transition);
+  border: 1px solid transparent !important;
+}
+
+/*banner section button hover over*/
+.btn:hover {
+  background: var(--color-white) !important;
+  color: var(--color-secondary);
+}
+
+/*Banner section end  here */
+
+/*our menu starts here */
+/*menu section main box  */
+.menus {
+  margin: 6rem auto;
  
 }
- /*banner section style on class baner*/
-.banner{
-    margin:8rem auto;
-    font-size: 1rem ;
-    line-height: 2;
-    padding:1rem
-}
 
- /*banner section button*/
-.btn{
-    color:var(--color-white);
-    background: var(--color-primary)!important;
-    transition: var(--transition);
-    border: 1px solid transparent !important;
-    outline: #FB9039;
+/*menu section each course box  */
+.menu {
+  text-align: center;
+  transition: var(--transition);
   
+}
+
+/*nenu section each course box when we hover over */
+.menu:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+}
+
+
+/*Menu section container */
+
+.our_menu {
+  margin-top:5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+} 
+
+/*Menu section images*/
+.menu-img{
+  position: relative;
+ 
+}
+.menu-img img{
+ width:100%
+}
+/*Menu section button on images*/
+.btn-order{
+  width: 6.5rem;
+  padding: .5rem 0;
+  outline: none !important;
+  border: none;
+  border-radius: 2px;
+  position: absolute;
+  background:var(--color-primary);
+  left:50%;
+  bottom: 0;
+  transform: translate(-50% , 0);
+  transition:.6;
+  opacity: 0;
+  z-index: 1;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+.btn-order a{
+  color:var(--color-white) !important
+}
+/*Menu section images and buuton hover over*/
+.menu-img:hover .btn-order{
+  transform: translate(-50% , 50%);
+  bottom: 50%;
+  opacity: 1;
+}
+/*Menu section overlay*/
+.overlay{
+ height:0;
+ width: 100%;
+ background: #333;
+ position: absolute;
+ top:0;
+ opacity: 0.5;
+ transition:.5s ;
+}
+
+/*Menu section overlay hover over*/
+.menu-img:hover .overlay{
+  opacity: .5;
+  height:100%;
+}
+
+
+
+/*courses section  ends here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Media query for About page for ipad/ talets screen start here*/
+@media only screen and (max-width: 1024px) {
+  .baner_index {
+    height: 60vh;
+  }
+
+  span i {
+    padding: .4rem;
+    margin-right: .4rem;
+
+  }
+
+  .banner {
+    margin: 0;
+  }
+
+  .header-right {
+    margin-left: .3rem;
+  }
+  .our_menu {
+    grid-template-columns: repeat(2, 1fr);
+    gap:1rem;
+   
+  } 
+}
+
+/*Media query for About page for mobile screen start here*/
+@media only screen and (max-width: 400px) {
+  .banner {
+    margin: 4rem 0;
+  }
+
+  /*our chef container */
+  .our_chef_container {
+    grid-template-columns: 1fr;
+  }
+  .our_menu {
+  grid-template-columns: 1fr;
+  margin: 5rem auto;
+   
+  } 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* about page */
+
+/*about page start here */
+/*banner section style on id banner*/
+.baner_about {
+  height: 85vh;
+  background-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)),
+    url(images/about/about_banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 20px;
+  color: #ffffff;
 
 }
- /*banner section button hover over*/
-.btn:hover{
-    background: var(--color-secondary)!important;
-    color:var(--color-white);
+
+.about {
+  padding: 100px 0;
+
 }
-/*Banner section end  here */
+
+.about_banner h2 {
+
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+  padding: 12rem;
+
+
+
+}
+
+.title-style {
+  margin: 2rem auto;
+  height: 6.5rem;
+  width: 40%;
+  max-width: 700px;
+  background: var(--color-primary);
+  position: relative;
+  padding-top: 1.5rem;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 50, 0.5);
+  text-shadow: 2px 4px 5px rgba(0, 0, 50, 0.5);
+}
+
+.title-style h2 {
+  font-weight: 700;
+  font-style: italic;
+  justify-content: center;
+  font-size: 3rem;
+  color: var(--color-white)
+}
+
+.title-style::after {
+  content: '';
+  height: 100px;
+  width: 200px;
+  background-color: var(--color-secondary);
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  z-index: -1;
+}
+
+.title-style::before {
+  content: '';
+  height: 100px;
+  width: 200px;
+  background-color: var(--color-secondary);
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  z-index: -1;
+}
+
+.about_container {
+  margin-top: 5rem;
+}
+
+.para {
+  color: var(--color-white);
+  line-height: 2;
+  font-size: 1.2rem;
+  text-align: justify;
+
+}
+
+/*About us our objective section in about page*/
+.our_objective ul {
+  margin-top: 5rem
+}
+
+.our_objective ul li {
+  list-style-type: circle !important;
+  color: var(--color-white);
+  line-height: 2;
+  font-size: 1.2rem;
+
+
+}
+
+
+/*About us our chef section */
+/*our chef section main box  in about page */
+.our_chef_box {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+/*our chef  main container  in about page */
+.our_chef_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 5rem
+}
+
+/*our chef card in about page */
+.our_chef {
+  text-align: center;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 50, 0.5);
+  padding-bottom: 1rem;
+  background: var(--color-primary);
+  color: var(--color-white);
+  cursor: pointer;
+
+
+}
+
+/*our chef card  hover over in about page */
+.our_chef:hover {
+  background: var(--color-secondary);
+  transition: var(--transition);
+
+}
+
+/*our chef card  image  in about page */
+.our_chef img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  position: relative;
+  margin: -3rem 0 3rem 0;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 50, 0.5);
+
+}
+
+/*our chef card  description  in about page */
+.our_chef p {
+  padding: 1.5rem
+}
+
+/*Media query for About page for ipad/ talets screen start here*/
+@media only screen and (max-width: 1024px) {
+  .baner_about {
+    height: 50vh;
+  }
+
+  .about_banner h2 {
+    padding: 7rem;
+    font-size: 2.2rem;
+
+
+
+  }
+
+  /*title of section in about us page */
+
+  .title-style {
+    width: 80%;
+  }
+
+  /*our chef container */
+  .our_chef_container {
+    grid-template-columns: 1fr 1fr;
+
+  }
+
+  .our_chef {
+    margin-top: 3rem;
+  }
+
+
+}
+
+/*Media query for About page for mobile screen start here*/
+@media only screen and (max-width: 400px) {
+
+  /*our chef container */
+  .our_chef_container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+
+/* veg page */
+
+/*veg page start here */
+/*veg section style on id banner*/
+.veg_about {
+  height: 85vh;
+  background-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)),
+    url(images/veg/veg_banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 20px;
+  color: #ffffff;
+
+}
+
+.about {
+  padding: 100px 0;
+
+}
+
+.veg_banner h2 {
+
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+  padding: 12rem;
+}
+/*Media query for About page for ipad/ talets screen start here*/
+@media only screen and (max-width: 1024px) {
+  .baner_about {
+    height: 50vh;
+  }
+
+  .about_banner h2 {
+    padding: 7rem;
+    font-size: 2.2rem;
+}
+
+
+
+
+
+}
+
+/*Media query for About page for mobile screen start here*/
+@media only screen and (max-width: 400px) {
+
+  /*our chef container */
+  .our_chef_container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+
+
 
 
 
@@ -174,57 +620,62 @@ background-image: linear-gradient(to bottom,
 /*form section starts here */
 
 form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 600px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 2rem;
-    margin: 3rem auto;
-    background:var(--color-white);
-    border-radius: 1rem;
-   }
-   form h2{
-   margin: .2rem auto .9rem;
-   color:var(--color-secondary) 
-    }
-   img.avatar {
-    width: 10rem;
-    border-radius: 50%;
-    margin: 0 auto;
-  }
-  label {
-    display: block;
-    margin-bottom: 2px;
-    color: var(--color-secondary);
-  }
-  form div input {
-    width: 100%;
-    height: 40px;
-    border-radius: 8px;
-    outline: none;
-    border: 2px solid var(--color-primary);
-    padding: 0 30px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin: 3rem auto;
+  background: var(--color-white);
+  border-radius: 1rem;
+}
 
-  form div {
-    position: relative;
-    margin-bottom: 5px;
-  }
-  
-  input:focus {
-    border: 2px solid var(--color-secondary);
-  }
-  form div i {
-    position: absolute;
-    padding: 10px;
-    color:var(--color-secondary);
-    font-size: 1.25rem;
-  
-  }
-  
-  .failure-icon,
+form h2 {
+  margin: .2rem auto .9rem;
+  color: var(--color-secondary)
+}
+
+img.avatar {
+  width: 10rem;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 2px;
+  color: var(--color-secondary);
+}
+
+form div input {
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  outline: none;
+  border: 2px solid var(--color-primary);
+  padding: 0 30px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+  position: relative;
+  margin-bottom: 5px;
+}
+
+input:focus {
+  border: 2px solid var(--color-secondary);
+}
+
+form div i {
+  position: absolute;
+  padding: 10px;
+  color: var(--color-secondary);
+  font-size: 1.25rem;
+
+}
+
+.failure-icon,
 .error {
   color: var(--color-danger);
 }
@@ -237,34 +688,36 @@ form {
   font-size: 14.5px;
   margin-top: 2px;
 }
+
 .success-icon,
 .failure-icon {
   right: 0;
   opacity: 0;
 }
-#submit{
+
+#submit {
   border: transparent !important;
-  outline:transparent !important;
+  outline: transparent !important;
   font-weight: 600;
 }
- 
+
 
 
 a,
 a:active,
 a:focus {
-    color: #333;
-    text-decoration: none;
-    transition-timing-function: ease-in-out;
-    -ms-transition-timing-function: ease-in-out;
-    -moz-transition-timing-function: ease-in-out;
-    -webkit-transition-timing-function: ease-in-out;
-    -o-transition-timing-function: ease-in-out;
-    transition-duration: .2s;
-    -ms-transition-duration: .2s;
-    -moz-transition-duration: .2s;
-    -webkit-transition-duration: .2s;
-    -o-transition-duration: .2s;
+  color: #333;
+  text-decoration: none;
+  transition-timing-function: ease-in-out;
+  -ms-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-duration: .2s;
+  -ms-transition-duration: .2s;
+  -moz-transition-duration: .2s;
+  -webkit-transition-duration: .2s;
+  -o-transition-duration: .2s;
 }
 
 
@@ -273,133 +726,146 @@ a:focus {
 
 /*---------footer---------*/
 footer {
-background-color:var(--color-secondary);
-color: #fff;
-padding: 2.5rem 0 1rem 0;
-font-size: 17px;
-margin: 3rem 0 0 0
-
-
+  background-color: var(--color-secondary);
+  color: #fff;
+  padding: 2.5rem 0 1rem 0;
+  font-size: 17px;
+  margin: 3rem 0 0 0
 }
+
 /*footer  headings */
 footer h4 {
-font-size: 1.5rem;
-font-weight: 600;
-letter-spacing: 1px;
-display: inline-block;
-margin-bottom: 2px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-bottom: 2px;
 
 }
+
 /*footer  contact section */
 .contact-footer li i {
-position: absolute;
-left: 0;
-} 
+  position: absolute;
+  left: 0;
+}
+
 .contact-footer li {
-padding-left: 40px;
-position: relative;
-margin-bottom: 1.2rem;
+  padding-left: 40px;
+  position: relative;
+  margin-bottom: 1.2rem;
 }
 
 /*footer links section */
 footer a {
-color: #fff;
+  color: #fff;
 }
+
 /*footer links hover */
 footer a:hover {
-color: var(--color-primary);
+  color: var(--color-primary);
 }
+
 /*footer title */
 .footer-title {
-border-bottom: 3px solid var(--color-primary);
-padding-bottom: 1.2rem;
-margin-bottom: 2rem;
+  border-bottom: 3px solid var(--color-primary);
+  padding-bottom: 1.2rem;
+  margin-bottom: 2rem;
 }
+
 .footer-title i {
   background: var(--color-white);
   color: var(--color-secondary);
 }
+
 /*footer list items  */
 ul.footer-social {
-float: right;
+  float: right;
 }
 
 ul.footer-social li {
-display: inline;
-margin-right: 16px;
+  display: inline;
+  margin-right: 16px;
 }
 
 ul.footer-social i {
-width: 2rem;
-height:2rem;
-background: var(--color-white);
-color:var(--color-black);
-text-align: center;
-line-height: 2rem;
-border-radius: 50%;
-font-size: 1.2rem;
-transition: var(--transition);
-font-weight: 800;
+  width: 2rem;
+  height: 2rem;
+  background: var(--color-white);
+  color: var(--color-black);
+  text-align: center;
+  line-height: 2rem;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  transition: var(--transition);
+  font-weight: 800;
 }
 
 ul.footer-social li:last-child {
-margin-right: 0px;
+  margin-right: 0px;
 }
 
 ul.footer-social i:hover {
-background:var(--color-primary);
-color: #fff;
+  background: var(--color-primary);
+  color: #fff;
 }
+
 /*footer open hour table */
 .footer-links li {
-margin-bottom: 1.2rem;
+  margin-bottom: 1.2rem;
 }
+
 /*footer open hour table */
 footer .table td:first-child {
-font-weight: 600;
-padding-left: 33px;
+  font-weight: 600;
+  padding-left: 2rem;
 }
 
-footer .table td:last-child {text-align: right;}
+/*footer opern hour table */
+footer .table td:last-child {
+  text-align: right;
+}
+
 footer .table td {
-padding: 0px;
-border: 0;
+  border: none;
 }
 
-footer .table tr {
-}
-
+/*footer opern hour table icon */
 footer .table td i {
-position: absolute;
-left: 0px;
-font-size: 21px;
-top: 6px;
+  position: absolute;
+  left: 0;
+  font-size: 1.3rem;
+  top: 6px;
 }
 
 footer .table td {
-position: relative;
-padding: 4px 0;
-color: white;
+  position: relative;
+  padding: .4rem 0;
+  color: white;
 }
-.footer-logo td {
-padding-right: 4px !important;
-}
+
 
 .footer-logo td:last-child {
-padding-right: 0px !important;
+  padding-right: 0px !important;
 }
+
 /*footer bottom section */
 footer hr {
-border-color: #9294a0;
+  border-color: #9294a0;
 }
 
+/*footer bottom  paragraph */
 .footer-bottom p {
-text-align: right;
-}
-.footer-bottom {
-margin-top: 30px;
-}
-.open-hours hr {
-margin: 30px 0;
+  text-align: right;
 }
 
+.footer-bottom {
+  margin-top: 30px;
+  */
+}
+
+@media only screen and (max-width: 400px) {
+
+  .footer-bottom p {
+    text-align: left;
+  }
+}
