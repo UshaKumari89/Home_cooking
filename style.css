@@ -19,9 +19,70 @@
   --color-danger: rgb(232, 37, 37);
   --color-success: rgb(8, 138, 8);
   --transition: all 400ms ease;
+  --box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
 
 
 }
+/* general button which will resue*/
+.btn {
+  color: var(--color-white) !important;
+  background: var(--color-primary) !important;
+  transition: var(--transition);
+  border: 1px solid transparent !important;
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+/* general button hover over*/
+.btn:hover {
+  background: var(--color-secondary) !important;
+  color: var(--color-white) !important;
+}
+/*Title box  */
+.title-style {
+  margin: 4rem auto;
+  height: 6.5rem;
+  width: 40%;
+  max-width: 700px;
+  background: var(--color-primary);
+  position: relative;
+  padding-top: 1.5rem;
+  box-shadow: var(--box-shadow);
+  text-shadow:var(--box-shadow);
+}
+/*Title box heading */
+.title-style h2 {
+  font-weight: 700;
+  font-style: italic;
+  justify-content: center;
+  font-size: 3rem;
+  color: var(--color-white)
+}
+/*Title box after */
+.title-style::after {
+  content: '';
+  height: 100px;
+  width: 200px;
+  background-color: var(--color-secondary);
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  z-index: -1;
+}
+/*Title box before */
+.title-style::before {
+  content: '';
+  height: 100px;
+  width: 200px;
+  background-color: var(--color-secondary);
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  z-index: -1;
+}
+
 
 /*styles on body */
 body {
@@ -59,14 +120,22 @@ span i {
   margin-bottom: .4rem;
   cursor: pointer;
   transition: var(--transition);
-  margin-right: 1.3rem;
+  margin-right: 2rem;
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 /*style for icon hover over in header**/
 
 span i:hover {
   color: var(--color-white) !important;
-  background: var(--color-secondary);
+  background: var(--color-primary);
 }
 
 /*logo and navigation  section of header*/
@@ -106,7 +175,7 @@ span i:hover {
 /*navigation links, and navbar brand color when we hover over*/
 .nav-link:hover,
 .dropdown-item:hover {
-  color: var(--color-secondary) !important;
+  color:rgb(240, 235, 235) !important;
 
 }
 
@@ -144,47 +213,25 @@ span i:hover {
 
 /*Navigation section end here */
 
-
+/*home page section  ends here */
 /*Banner section start here */
-/*banner section style on id banner*/
-.baner_index {
-  height: 85vh;
-  background-image: linear-gradient(to bottom,
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)),
-    url(images/banner.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding-top: 20px;
-  color: #ffffff;
+/*banner section style on  carousel*/
+
+.carousel-caption {
+  left:50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+} 
+/*banner section style on  carousel items*/
+.carousel-item{
+  height: 80vh !important;
+}
+/*banner section style on  carousel items heading*/
+h5{
+font-size:3rem;
+text-shadow: 0px 0px 8px rgba(0, 2, 0, 1);
 
 }
-
-/*banner section style on class baner*/
-.banner {
-  margin: 8rem auto;
-  font-size: 1rem;
-  line-height: 2;
-  padding: 1rem
-}
-
-/*banner section button*/
-.btn {
-  color: var(--color-white) !important;
-  background: var(--color-secondary) !important;
-  transition: var(--transition);
-  border: 1px solid transparent !important;
-}
-
-/*banner section button hover over*/
-.btn:hover {
-  background: var(--color-white) !important;
-  color: var(--color-secondary);
-}
-
-/*Banner section end  here */
-
 /*our menu starts here */
 /*menu section main box  */
 .menus {
@@ -196,17 +243,13 @@ span i:hover {
 .menu {
   text-align: center;
   transition: var(--transition);
-  
 }
 
-/*nenu section each course box when we hover over */
+/*menu section each course box when we hover over */
 .menu:hover {
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  box-shadow: var(--box-shadow);
 }
-
-
 /*Menu section container */
-
 .our_menu {
   margin-top:5rem;
   display: grid;
@@ -237,10 +280,6 @@ span i:hover {
   transition:.6;
   opacity: 0;
   z-index: 1;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
 }
 .btn-order a{
   color:var(--color-white) !important
@@ -250,6 +289,7 @@ span i:hover {
   transform: translate(-50% , 50%);
   bottom: 50%;
   opacity: 1;
+
 }
 /*Menu section overlay*/
 .overlay{
@@ -270,7 +310,24 @@ span i:hover {
 
 
 
-/*courses section  ends here */
+/*home page section  ends here */
+
+/*Banner section ends here */
+#banner{
+  height: 90vh;
+  background-image: url(images/baner_2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 10%;
+  margin-top: 5rem;
+}
+.banner-highlights{
+  padding:70px 0;
+  background-color: rgba(0,0,0,0.6);
+  text-align: center;
+  color: #ffffff;
+}
 
 
 
@@ -290,48 +347,44 @@ span i:hover {
 
 
 
-
-/*Media query for About page for ipad/ talets screen start here*/
+/*Media query for home page for ipad/ talets screen start here*/
 @media only screen and (max-width: 1024px) {
-  .baner_index {
-    height: 60vh;
-  }
-
-  span i {
+span i {
     padding: .4rem;
     margin-right: .4rem;
 
   }
 
-  .banner {
-    margin: 0;
-  }
-
   .header-right {
     margin-left: .3rem;
   }
+  .carousel-caption {
+ top: 50%;
+   
+  }
+  .carousel-item{
+    height: 50vh !important;
+  } 
+  h5{
+    font-size:1.5rem;
+    
+    
+    }
   .our_menu {
     grid-template-columns: repeat(2, 1fr);
-    gap:1rem;
-   
   } 
 }
 
-/*Media query for About page for mobile screen start here*/
+/*Media query for Home page for mobile screen start here*/
 @media only screen and (max-width: 400px) {
-  .banner {
-    margin: 4rem 0;
-  }
-
-  /*our chef container */
-  .our_chef_container {
-    grid-template-columns: 1fr;
-  }
+  
+  /*our menu container */
   .our_menu {
-  grid-template-columns: 1fr;
-  margin: 5rem auto;
-   
-  } 
+    grid-template-columns: 1fr;
+    margin: 5rem auto;
+     
+    }
+ 
 }
 
 
@@ -350,7 +403,9 @@ span i:hover {
 
 /*about page start here */
 /*banner section style on id banner*/
-.baner_about {
+/*veg page start here */
+/*veg section style on id banner*/
+.about_banner {
   height: 85vh;
   background-image: linear-gradient(to bottom,
       rgba(0, 0, 0, 0.6),
@@ -369,63 +424,26 @@ span i:hover {
 
 }
 
-.about_banner h2 {
-
-  font-weight: 700;
+.about_about h2 {
+font-weight: 700;
   font-size: 3rem;
   text-align: center;
   padding: 12rem;
-
-
-
 }
 
-.title-style {
-  margin: 2rem auto;
-  height: 6.5rem;
-  width: 40%;
-  max-width: 700px;
-  background: var(--color-primary);
-  position: relative;
-  padding-top: 1.5rem;
-  box-shadow: 0 4px 5px 0 rgba(0, 0, 50, 0.5);
-  text-shadow: 2px 4px 5px rgba(0, 0, 50, 0.5);
-}
 
-.title-style h2 {
-  font-weight: 700;
-  font-style: italic;
-  justify-content: center;
-  font-size: 3rem;
-  color: var(--color-white)
-}
 
-.title-style::after {
-  content: '';
-  height: 100px;
-  width: 200px;
-  background-color: var(--color-secondary);
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  z-index: -1;
-}
+/* .about {
+  padding: 100px 0;
 
-.title-style::before {
-  content: '';
-  height: 100px;
-  width: 200px;
-  background-color: var(--color-secondary);
-  position: absolute;
-  bottom: -10px;
-  right: -10px;
-  z-index: -1;
-}
+} */
 
+
+/*About us container in about page*/
 .about_container {
   margin-top: 5rem;
 }
-
+/*paragraph  in about page*/
 .para {
   color: var(--color-white);
   line-height: 2;
@@ -434,11 +452,11 @@ span i:hover {
 
 }
 
-/*About us our objective section in about page*/
+/* our objective section in about page*/
 .our_objective ul {
   margin-top: 5rem
 }
-
+/* our objective list in about page*/
 .our_objective ul li {
   list-style-type: circle !important;
   color: var(--color-white);
@@ -447,9 +465,8 @@ span i:hover {
 
 
 }
+/*our chef section in About us page */
 
-
-/*About us our chef section */
 /*our chef section main box  in about page */
 .our_chef_box {
   padding: 3rem 0;
@@ -467,7 +484,7 @@ span i:hover {
 /*our chef card in about page */
 .our_chef {
   text-align: center;
-  box-shadow: 0 4px 5px 0 rgba(0, 0, 50, 0.5);
+  box-shadow: var(--box-shadow);
   padding-bottom: 1rem;
   background: var(--color-primary);
   color: var(--color-white);
@@ -480,7 +497,10 @@ span i:hover {
 .our_chef:hover {
   background: var(--color-secondary);
   transition: var(--transition);
-
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
 }
 
 /*our chef card  image  in about page */
@@ -490,8 +510,7 @@ span i:hover {
   border-radius: 50%;
   position: relative;
   margin: -3rem 0 3rem 0;
-  box-shadow: 0 4px 5px 0 rgba(0, 0, 50, 0.5);
-
+  box-shadow:var(--box-shadow)
 }
 
 /*our chef card  description  in about page */
@@ -505,40 +524,30 @@ span i:hover {
     height: 50vh;
   }
 
-  .about_banner h2 {
+  .about_about h2 {
     padding: 7rem;
     font-size: 2.2rem;
-
-
-
-  }
-
+}
   /*title of section in about us page */
-
-  .title-style {
+.title-style {
     width: 80%;
   }
-
-  /*our chef container */
+/*our chef container */
   .our_chef_container {
     grid-template-columns: 1fr 1fr;
-
-  }
-
-  .our_chef {
+}
+.our_chef {
     margin-top: 3rem;
   }
-
-
 }
 
 /*Media query for About page for mobile screen start here*/
 @media only screen and (max-width: 400px) {
-
-  /*our chef container */
+/*our chef container */
   .our_chef_container {
     grid-template-columns: 1fr;
   }
+
 }
 
 
@@ -570,40 +579,178 @@ span i:hover {
 }
 
 .veg_banner h2 {
-
-  font-weight: 700;
+font-weight: 700;
   font-size: 3rem;
   text-align: center;
   padding: 12rem;
 }
-/*Media query for About page for ipad/ talets screen start here*/
+/*Media query for veg page for ipad/ talets screen start here*/
 @media only screen and (max-width: 1024px) {
   .baner_about {
     height: 50vh;
   }
 
-  .about_banner h2 {
+  .veg_banner h2 {
     padding: 7rem;
     font-size: 2.2rem;
 }
+}
 
 
+/* non-veg page */
 
-
+/*non-veg page start here */
+/*non-veg section style on id banner*/
+.non_veg_about {
+  height: 85vh;
+  background-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)),
+    url(images/non-veg/non_veg_banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 20px;
+  color: #ffffff;
 
 }
 
-/*Media query for About page for mobile screen start here*/
-@media only screen and (max-width: 400px) {
 
-  /*our chef container */
-  .our_chef_container {
-    grid-template-columns: 1fr;
+.non_veg_about h2 {
+font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+  padding: 12rem;
+}
+/*Media query for non-veg page for ipad/ talets screen start here*/
+@media only screen and (max-width: 1024px) {
+.non_veg_about{
+  height: 50vh;
+}
+
+  .non_veg_about h2 {
+    padding: 7rem;
+    font-size: 2.2rem;
+}
+}
+
+
+/* drinks page */
+
+/*drinks page start here */
+/*drinks section style on drinks page*/
+.drinks_about {
+  height: 85vh;
+  background-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)),
+    url(images/drinks/img_1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 20px;
+  color: #ffffff;
+
+}
+
+
+
+.drinks_banner h2 {
+font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+  padding: 12rem;
+}
+/*Media query for veg page for ipad/ talets screen start here*/
+@media only screen and (max-width: 1024px) {
+  .drinks_about {
+    height: 50vh;
   }
+
+  .drinks_banner h2 {
+    padding: 7rem;
+    font-size: 2.2rem;
+}
+}
+
+/* veg page */
+
+/*veg page start here */
+/*veg section style on id banner*/
+.veg_about {
+  height: 85vh;
+  background-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)),
+    url(images/veg/veg_banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 20px;
+  color: #ffffff;
+
+}
+
+.about {
+  padding: 100px 0;
+
+}
+
+.veg_banner h2 {
+font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+  padding: 12rem;
+}
+/*Media query for veg page for ipad/ talets screen start here*/
+@media only screen and (max-width: 1024px) {
+  .veg_about {
+    height: 50vh;
+  }
+
+  .veg_banner h2 {
+    padding: 7rem;
+    font-size: 2.2rem;
+}
 }
 
 
+/* non-veg page */
 
+/*non-veg page start here */
+/*non-veg section style on id banner*/
+.deserts_about {
+  height: 85vh;
+  background-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)),
+    url(images/deserts/img_1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 20px;
+  color: #ffffff;
+
+}
+
+
+.deserts_banner h2 {
+font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+  padding: 12rem;
+}
+/*Media query for non-veg page for ipad/ talets screen start here*/
+@media only screen and (max-width: 1024px) {
+.deserts_about{
+  height: 50vh;
+}
+
+  .deserts_banner h2 {
+    padding: 7rem;
+    font-size: 2.2rem;
+}
+}
 
 
 
@@ -624,30 +771,30 @@ form {
   flex-direction: column;
   justify-content: center;
   max-width: 600px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--box-shadow);
   padding: 2rem;
   margin: 3rem auto;
   background: var(--color-white);
   border-radius: 1rem;
 }
-
+/* heading in form in log in page */
 form h2 {
   margin: .2rem auto .9rem;
   color: var(--color-secondary)
 }
-
+/* image in form in log in page */
 img.avatar {
   width: 10rem;
   border-radius: 50%;
   margin: 0 auto;
 }
-
+/* label in form in log in page */
 label {
   display: block;
   margin-bottom: 2px;
   color: var(--color-secondary);
 }
-
+/* input in form in log in page */
 form div input {
   width: 100%;
   height: 40px;
@@ -655,18 +802,19 @@ form div input {
   outline: none;
   border: 2px solid var(--color-primary);
   padding: 0 30px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--box-shadow);
 }
-
+/* input focus in log in page */
+input:focus {
+  border: 2px solid var(--color-secondary);
+}
+/* form in log in page */
 form div {
   position: relative;
   margin-bottom: 5px;
 }
 
-input:focus {
-  border: 2px solid var(--color-secondary);
-}
-
+/*icon in form in form page */
 form div i {
   position: absolute;
   padding: 10px;
@@ -674,27 +822,27 @@ form div i {
   font-size: 1.25rem;
 
 }
-
+/*failure icon in form in form page*/
 .failure-icon,
 .error {
   color: var(--color-danger);
 }
-
+/*sucess icon in form page */
 .success-icon {
   color: var(--color-sucess);
 }
-
+/*error mesg icon in form page */
 .error {
   font-size: 14.5px;
   margin-top: 2px;
 }
-
+/*success and error icon in form page */
 .success-icon,
 .failure-icon {
   right: 0;
   opacity: 0;
 }
-
+/*submit in form page */
 #submit {
   border: transparent !important;
   outline: transparent !important;
@@ -702,7 +850,8 @@ form div i {
 }
 
 
-
+/*---------footer---------*/
+/*genneral style for link, link active and link focus */
 a,
 a:active,
 a:focus {
@@ -748,7 +897,7 @@ footer h4 {
   position: absolute;
   left: 0;
 }
-
+/*footer list in footer section*/
 .contact-footer li {
   padding-left: 40px;
   position: relative;
@@ -771,22 +920,22 @@ footer a:hover {
   padding-bottom: 1.2rem;
   margin-bottom: 2rem;
 }
-
+/*footer icon */
 .footer-title i {
   background: var(--color-white);
   color: var(--color-secondary);
 }
 
-/*footer list items  */
+/*footer  social media  */
 ul.footer-social {
   float: right;
 }
-
+/*footer  social media list */
 ul.footer-social li {
   display: inline;
   margin-right: 16px;
 }
-
+/*footer  social media list icon */
 ul.footer-social i {
   width: 2rem;
   height: 2rem;
@@ -799,11 +948,11 @@ ul.footer-social i {
   transition: var(--transition);
   font-weight: 800;
 }
-
+/*footer  social media last child */
 ul.footer-social li:last-child {
   margin-right: 0px;
 }
-
+/*footer  social media icon hover over */
 ul.footer-social i:hover {
   background: var(--color-primary);
   color: #fff;
@@ -825,10 +974,6 @@ footer .table td:last-child {
   text-align: right;
 }
 
-footer .table td {
-  border: none;
-}
-
 /*footer opern hour table icon */
 footer .table td i {
   position: absolute;
@@ -840,7 +985,8 @@ footer .table td i {
 footer .table td {
   position: relative;
   padding: .4rem 0;
-  color: white;
+  color: var(--color-white);
+  border: none;
 }
 
 
@@ -850,7 +996,7 @@ footer .table td {
 
 /*footer bottom section */
 footer hr {
-  border-color: #9294a0;
+  border-color: #333;
 }
 
 /*footer bottom  paragraph */
@@ -860,7 +1006,13 @@ footer hr {
 
 .footer-bottom {
   margin-top: 30px;
-  */
+
+}
+@media only screen and (max-width: 1024px) {
+
+  .footer-bottom p {
+    text-align: right;
+  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -869,3 +1021,119 @@ footer hr {
     text-align: left;
   }
 }
+
+
+
+
+
+/*Gallery page starts here */
+.gallery_box{
+  margin: 5rem auto;
+}
+.gallery_container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 5rem;
+}
+
+.thumbnail img {
+   object-fit: cover;
+  height: 300px;
+  max-width: 100%;
+  border-radius:1rem;
+  cursor: pointer;
+}
+.thumbnail img:hover {
+  box-shadow: var(--box-shadow);
+  transform: scale(1.1);
+  border:2px solid var(--color-secondary);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+/*Media query for gallery page for ipad/ talets screen start here*/
+@media only screen and (max-width: 1024px) {
+  .gallery_container{
+    grid-template-columns: repeat(2, 1fr);
+   
+  }
+}
+
+/*Media query for veg page for mobile screen start here*/
+@media only screen and (max-width: 400px) {
+  .gallery_container{
+    grid-template-columns: 1fr;
+   
+  }
+ 
+}
+
+
+
+
+
+
+
+
+
+
+/*order page starts here */
+/*order page box section  */
+.intro{
+ margin:5rem auto 1rem;
+max-width: 600px;
+color:var(--color-white)
+ 
+}
+/*order page box title */
+#title{
+  text-align: center;
+  text-shadow: 2px 2px #000000;
+}
+/*order page firld */
+
+fieldset{
+  background-color: var(--color-white);
+  margin: 0rem auto;
+  max-width: 600px;
+  font-size: 20px;
+  padding: 40px;
+}
+/*order page dropdown selection*/
+#dropdown{  
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  outline: none;
+  border: 2px solid var(--color-primary);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+/*order page dropdown hover over*/
+#dropdown:hover{
+  cursor: pointer; 
+}
+
+/*order page radio button*/
+input[type=radio] {
+    transform: scale(1.2);
+}
+
+input[type=radio]:hover{
+  cursor: pointer;
+}
+/*order page message box */
+#comments{
+  width: 100%;
+  min-height: 60px;
+  resize: vertical;
+}
+/*order page submit  */
+#submit{
+  width: 100%;
+ 
+ 
+}
+
+
