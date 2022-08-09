@@ -7,9 +7,7 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
-
 }
-
 /*create variable for color and transition for reuse */
 :root {
   --color-white: #ffffff;
@@ -20,8 +18,6 @@
   --color-success: rgb(8, 138, 8);
   --transition: all 400ms ease;
   --box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
-
-
 }
 /* general button which will resue*/
 .btn {
@@ -34,7 +30,6 @@
   -ms-transition: var(--transition);
   -o-transition: var(--transition);
 }
-
 /* general button hover over*/
 .btn:hover {
   background: var(--color-secondary) !important;
@@ -85,20 +80,16 @@
   right: -10px;
   z-index: -1;
 }
-
-
 /*styles on body */
 body {
   font-family: 'Roboto', sans-serif !important;
   background: var(--color-primary);
 }
-
 /*Navigation section start here */
 #navigationBar {
   box-shadow: 2px 1px 1px rgb(108, 106, 106);
 
 }
-
 /*upper section of header*/
 header {
   background-color: var(--color-secondary) !important;
@@ -107,13 +98,10 @@ header {
   color: var(--color-white);
   width: 100%;
   font-size: 1.2rem;
-
 }
-
 .header-right {
   margin-left: 2rem;
 }
-
 /*style for icon in header*/
 span i {
   background-color: var(--color-white);
@@ -124,73 +112,50 @@ span i {
   cursor: pointer;
   transition: var(--transition);
   margin-right: 2rem;
-  -webkit-transition: var(--transition);
-  -moz-transition: var(--transition);
-  -ms-transition: var(--transition);
-  -o-transition: var(--transition);
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-}
-
+ }
 /*style for icon hover over in header**/
-
 span i:hover {
   color: var(--color-white) !important;
   background: var(--color-primary);
 }
-
 /*logo and navigation  section of header*/
-
 /*navbar and dropdown style */
 .navbar,
 .dropdown-menu {
-  background-color: var(--color-primary) !important;
+  background: var(--color-primary) !important;
   color: var(--color-white) !important;
 }
-
 /*navbar brand of the website */
 .navbar-brand {
   font-weight: 600 !important;
   font-size: 1.5rem;
   color: var(--color-white) !important
 }
-
 /*log0 varof the website */
 .LogoImg {
   width: 2.3rem;
   border-radius: 50%;
   border: 3px solid var(--color-secondary) !important;
-
 }
-
 /*navigation links of the page*/
-
 .nav-link {
   color: var(--color-white) !important;
   padding-left: 2rem !important;
   font-size: 1.1rem;
   font-weight: 600 !important;
-
 }
-
 /*navigation links, and navbar brand color when we hover over*/
 .nav-link:hover,
 .dropdown-item:hover {
   color:rgb(240, 235, 235) !important;
-
 }
-
 /*navigation toggler button*/
 .navbar-toggler {
   background: var(--color-primary);
   color: var(--color-white) !important;
   outline: none !important;
   border: none !important;
-
 }
-
 /*navigation toggler button menu*/
 .dropdown-menu[data-bs-popper] {
   margin-top: .5rem;
@@ -199,50 +164,47 @@ span i:hover {
 /*navigation  dropdown*/
 .dropdown-item {
   color: var(--color-white) !important;
-
-  text-align: center;
+ text-align: center;
   font-weight: 600;
 }
-
 /*navigation  dropdown hover over*/
 .dropdown-item:hover {
   background: none;
 }
-
 /*navigation  links*/
 .nav-link {
   text-align: center;
 }
-
 /*Navigation section end here */
-
 /*home page section  ends here */
+
 /*Banner section start here */
 /*banner section style on  carousel*/
-
 .carousel-caption {
   left:50%;
   top: 60%;
   transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
 } 
 /*banner section style on  carousel items*/
  .carousel-item img{
   width: 100vw;
   height: 80vh !important;
-} */
+} 
 /*banner section style on  carousel items heading*/
 h3{
 font-size:3rem;
-text-shadow: 0px 0px 8px rgba(0, 2, 0, 1);
+text-shadow: 1px 1px 2px black;
 
 }
 /*our menu starts here */
 /*menu section main box  */
 .menus {
   margin: 6rem auto;
- 
-}
-
+ }
 /*menu section each course box  */
 .menu {
   text-align: center;
@@ -252,7 +214,6 @@ text-shadow: 0px 0px 8px rgba(0, 2, 0, 1);
   -ms-transition: var(--transition);
   -o-transition: var(--transition);
 }
-
 /*menu section each course box when we hover over */
 .menu:hover {
   box-shadow: var(--box-shadow);
@@ -264,12 +225,10 @@ text-shadow: 0px 0px 8px rgba(0, 2, 0, 1);
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
 } 
-
 /*Menu section images*/
 .menu-img{
   position: relative;
- 
-}
+ }
 .menu-img img{
  width:100%;
 }
@@ -284,18 +243,10 @@ text-shadow: 0px 0px 8px rgba(0, 2, 0, 1);
   background:var(--color-primary);
   left:50%;
   bottom: 0;
-  transform: translate(-50% , 0);
-  transition:.6;
+  transform: translate(-50% , 50%);
+  transition:var(--transition);
   opacity: 0;
   z-index: 1;
-  -webkit-transform: translate(-50% , 0);
-  -moz-transform: translate(-50% , 0);
-  -ms-transform: translate(-50% , 0);
-  -o-transform: translate(-50% , 0);
-  -webkit-transition:;
-  -moz-transition:;
-  -ms-transition:;
-  -o-transition:;
 }
 .btn-order a{
   color:var(--color-white) !important
@@ -305,10 +256,6 @@ text-shadow: 0px 0px 8px rgba(0, 2, 0, 1);
   transform: translate(-50% , 50%);
   bottom: 50%;
   opacity: 1;
-  -webkit-transform:;
-  -moz-transform:;
-  -ms-transform:;
-  -o-transform:;
 }
 /*Menu section overlay*/
 .overlay{
@@ -319,6 +266,10 @@ text-shadow: 0px 0px 8px rgba(0, 2, 0, 1);
  top:0;
  opacity: 0.5;
  transition:.5s ;
+ -webkit-transition:.5s ;
+ -moz-transition:.5s ;
+ -ms-transition:.5s ;
+ -o-transition:.5s ;
 }
 
 /*Menu section overlay hover over*/
@@ -341,7 +292,6 @@ text-shadow: 0px 0px 8px rgba(0, 2, 0, 1);
   height:15rem
 }
 /*home page section  ends here */
-
 /*Banner section ends here */
 #banner{
   height: 90vh;
@@ -364,35 +314,16 @@ iframe{
   height: 70vh;
   border:0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*Media query for home page for ipad/ talets screen start here*/
 @media only screen and (max-width: 1024px) {
 span i {
     padding: .4rem;
     margin-right: .4rem;
-
   }
-
-  .header-right {
+.header-right {
     margin-left: .3rem;
   }
-  .carousel-caption {
+    .carousel-caption {
  top: 50%;
    
   }
@@ -401,8 +332,6 @@ span i {
   } 
   h3{
     font-size:1.2rem;
-    
-    
     }
   .our_menu {
     grid-template-columns: repeat(2, 1fr);
@@ -411,34 +340,14 @@ span i {
 
 /*Media query for Home page for mobile screen start here*/
 @media only screen and (max-width: 400px) {
-  
   /*our menu container */
   .our_menu {
     grid-template-columns: 1fr;
-    margin: 5rem auto;
-     
+    margin: 5rem auto;    
     }
- 
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
+ }
 /* about page */
-
-/*about page start here */
 /*banner section style on id banner*/
-/*veg page start here */
-/*veg section style on id banner*/
 .about_banner {
   height: 85vh;
   background-image: linear-gradient(to bottom,
@@ -450,23 +359,14 @@ span i {
   background-repeat: no-repeat;
   padding-top: 20px;
   color: #ffffff;
-
 }
+/*about page heading */
 .about_about h2 {
 font-weight: 700;
   font-size: 3rem;
   text-align: center;
    padding: 12rem; 
 }
-
-
-
-/* .about {
-  padding: 100px 0;
-
-} */
-
-
 /*About us container in about page*/
 .about_container {
   margin-top: 5rem;
@@ -477,9 +377,7 @@ font-weight: 700;
   line-height: 2;
   font-size: 1.2rem;
   text-align: justify;
-
 }
-
 /* our objective section in about page*/
 .our_objective ul {
   margin-top: 5rem
@@ -490,11 +388,8 @@ font-weight: 700;
   color: var(--color-white);
   line-height: 2;
   font-size: 1.2rem;
-
-
 }
 /*our chef section in About us page */
-
 /*our chef section main box  in about page */
 .our_chef_box {
   padding: 3rem 0;
@@ -508,7 +403,6 @@ font-weight: 700;
   gap: 2rem;
   margin-top: 7rem
 }
-
 /*our chef card in about page */
 .our_chef {
   text-align: center;
@@ -517,10 +411,7 @@ font-weight: 700;
   background: var(--color-primary);
   color: var(--color-white);
   cursor: pointer;
-
-
 }
-
 /*our chef card  hover over in about page */
 .our_chef:hover {
   background: var(--color-secondary);
@@ -530,7 +421,6 @@ font-weight: 700;
   -ms-transition: var(--transition);
   -o-transition: var(--transition);
 }
-
 /*our chef card  image  in about page */
 .our_chef img {
   width: 6rem;
@@ -544,12 +434,10 @@ font-weight: 700;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-
 /*our chef card  description  in about page */
 .our_chef p {
   padding: 1.5rem
 }
-
 /*Media query for About page for ipad/ talets screen start here*/
 @media only screen and (max-width: 1024px) {
   .baner_about {
@@ -559,8 +447,7 @@ font-weight: 700;
   .about_about h2 {
     padding: 7rem;
     font-size: 2.2rem;
-}
-  /*title of section in about us page */
+}  /*title of section in about us page */
 .title-style {
     width: 80%;
   }
@@ -572,23 +459,13 @@ font-weight: 700;
     margin-top: 3rem;
   }
 }
-
 /*Media query for About page for mobile screen start here*/
 @media only screen and (max-width: 400px) {
 /*our chef container */
   .our_chef_container {
     grid-template-columns: 1fr;
   }
-
 }
-
-
-
-
-
-
-/* veg page */
-
 /*veg page start here */
 /*veg section style on id banner*/
 .veg_about {
@@ -602,7 +479,6 @@ font-weight: 700;
   background-repeat: no-repeat;
   padding-top: 20px;
   color: #ffffff;
-
 }
 .veg_banner h2 {
 font-weight: 700;
@@ -615,16 +491,11 @@ font-weight: 700;
   .baner_about {
     height: 50vh;
   }
-
-  .veg_banner h2 {
-    padding: 7rem;
+.veg_banner h2 {
+        padding: 7rem;
     font-size: 2.2rem;
 }
 }
-
-
-/* non-veg page */
-
 /*non-veg page start here */
 /*non-veg section style on id banner*/
 .non_veg_about {
@@ -638,10 +509,7 @@ font-weight: 700;
   background-repeat: no-repeat;
   padding-top: 20px;
   color: #ffffff;
-
 }
-
-
 .non_veg_about h2 {
 font-weight: 700;
   font-size: 3rem;
@@ -653,16 +521,11 @@ font-weight: 700;
 .non_veg_about{
   height: 50vh;
 }
-
-  .non_veg_about h2 {
-    padding: 7rem;
+.non_veg_about h2 {
+  padding: 7rem;
     font-size: 2.2rem;
 }
 }
-
-
-/* drinks page */
-
 /*drinks page start here */
 /*drinks section style on drinks page*/
 .drinks_about {
@@ -676,11 +539,8 @@ font-weight: 700;
   background-repeat: no-repeat;
   padding-top: 20px;
   color: #ffffff;
-
 }
-
-
-
+/*drinks page heading */
 .drinks_banner h2 {
 font-weight: 700;
   font-size: 3rem;
@@ -692,51 +552,11 @@ font-weight: 700;
   .drinks_about {
     height: 50vh;
   }
-
-  .drinks_banner h2 {
+.drinks_banner h2 {
     padding: 7rem;
     font-size: 2.2rem;
-}
-}
-
-/* veg page */
-
-/*veg page start here */
-/*veg section style on id banner*/
-/* .veg_about {
-  height: 85vh;
-  background-image: linear-gradient(to bottom,
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)),
-    url(images/veg/veg_banner.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding-top: 20px;
-  color: #ffffff;
-
-}
-.veg_banner h2 {
-font-weight: 700;
-  font-size: 3rem;
-  text-align: center;
-  padding: 12rem;
-} */
-/*Media query for veg page for ipad/ talets screen start here*/
-/* @media only screen and (max-width: 1024px) {
-  .veg_about {
-    height: 50vh;
   }
-
-  .veg_banner h2 {
-    padding: 7rem;
-    font-size: 2.2rem;
 }
-} */
-
-
-/* non-veg page */
-
 /*non-veg page start here */
 /*non-veg section style on id banner*/
 .deserts_about {
@@ -752,7 +572,7 @@ font-weight: 700;
   color: #ffffff;
 
 }
-
+/*non-veg section style on heading*/
 
 .deserts_banner h2 {
 font-weight: 700;
@@ -765,27 +585,14 @@ font-weight: 700;
 .deserts_about{
   height: 50vh;
 }
-
-  .deserts_banner h2 {
+ .deserts_banner h2 {
     padding: 7rem;
     font-size: 2.2rem;
 }
 }
-
-
-
-
-
-
-
-
-
-
-
 /*log in page starts here */
 
 /*form section starts here */
-
 form {
   display: flex;
   flex-direction: column;
@@ -824,10 +631,9 @@ form div input {
   height: 40px;
   border-radius: 8px;
   outline: none;
-  border: 2px solid var(--color-primary);
+ border: 2px solid transparent;
   padding: 0 30px;
-  box-shadow: var(--box-shadow);
-  
+
 }
 /* input focus in log in page */
 input:focus {
@@ -838,7 +644,6 @@ form div {
   position: relative;
   margin-bottom: 5px;
 }
-
 /*icon in form in form page */
 form div i {
   position: absolute;
@@ -873,8 +678,6 @@ form div i {
   outline: transparent !important;
   font-weight: 600;
 }
-
-
 /*---------footer---------*/
 /*genneral style for link, link active and link focus */
 a,
@@ -893,11 +696,6 @@ a:focus {
   -webkit-transition-duration: .2s;
   -o-transition-duration: .2s;
 }
-
-
-
-
-
 /*---------footer---------*/
 footer {
   background-color: var(--color-secondary);
@@ -906,7 +704,6 @@ footer {
   font-size: 17px;
   margin: 3rem 0 0 0
 }
-
 /*footer  headings */
 footer h4 {
   font-size: 1.5rem;
@@ -914,9 +711,7 @@ footer h4 {
   letter-spacing: 1px;
   display: inline-block;
   margin-bottom: 2px;
-
 }
-
 /*footer  contact section */
 .contact-footer li i {
   position: absolute;
@@ -928,20 +723,19 @@ footer h4 {
   position: relative;
   margin-bottom: 1.2rem;
 }
-
 /*footer links section */
 footer a {
   color: #fff;
 }
-
 /*footer links hover */
-footer a:hover {
-  color: var(--color-primary);
-}
-
+ footer a:hover {
+  color: rgb(241, 238, 238);
+  font-weight: 700;
+  text-decoration: underline;
+} 
 /*footer title */
 .footer-title {
-  border-bottom: 3px solid var(--color-primary);
+  border-bottom: 3px solid var(--color-white);
   padding-bottom: 1.2rem;
   margin-bottom: 2rem;
 }
@@ -950,7 +744,6 @@ footer a:hover {
   background: var(--color-white);
   color: var(--color-secondary);
 }
-
 /*footer  social media  */
 ul.footer-social {
   float: right;
@@ -972,6 +765,14 @@ ul.footer-social i {
   font-size: 1.2rem;
   transition: var(--transition);
   font-weight: 800;
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 /*footer  social media last child */
 ul.footer-social li:last-child {
@@ -987,18 +788,15 @@ ul.footer-social i:hover {
 .footer-links li {
   margin-bottom: 1.2rem;
 }
-
 /*footer open hour table */
 footer .table td:first-child {
   font-weight: 600;
   padding-left: 2rem;
 }
-
 /*footer opern hour table */
 footer .table td:last-child {
   text-align: right;
 }
-
 /*footer opern hour table icon */
 footer .table td i {
   position: absolute;
@@ -1013,65 +811,59 @@ footer .table td {
   color: var(--color-white);
   border: none;
 }
-
-
 .footer-logo td:last-child {
   padding-right: 0px !important;
 }
-
 /*footer bottom section */
 footer hr {
   border-color: #333;
 }
-
 /*footer bottom  paragraph */
 .footer-bottom p {
   text-align: right;
 }
-
 .footer-bottom {
   margin-top: 30px;
-
 }
 @media only screen and (max-width: 1024px) {
-
-  .footer-bottom p {
+.footer-bottom p {
     text-align: right;
   }
 }
-
 @media only screen and (max-width: 400px) {
 
   .footer-bottom p {
     text-align: left;
   }
 }
-
-
-
-
-
 /*Gallery page starts here */
 .gallery_box{
   margin: 5rem auto;
 }
+/*Gallery page container */
 .gallery_container{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin-top: 5rem;
 }
-
+/*Gallery thumbnails image */
 .thumbnail img {
-   object-fit: cover;
+  object-fit: cover;
   height: 300px;
   max-width: 100%;
   cursor: pointer;
+  border-radius:1rem;
+  -webkit-border-radius:1rem;
+  -moz-border-radius:1rem;
+  -ms-border-radius:1rem;
+  -o-border-radius:1rem;
 }
+/*Gallery thumbnails image hover over */
 .thumbnail img:hover {
   box-shadow: var(--box-shadow);
   transform: scale(1.1);
-  border:2px solid var(--color-secondary);
+  border:2px solid var(--color-white) !important;
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
@@ -1084,7 +876,6 @@ footer hr {
    
   }
 }
-
 /*Media query for veg page for mobile screen start here*/
 @media only screen and (max-width: 400px) {
   .gallery_container{
@@ -1093,40 +884,25 @@ footer hr {
   }
  
 }
-
-
-
-
-
-
-
-
-
-
 /*order page starts here */
 /*order page box section  */
 
 /*order page dropdown selection*/
-#dropdown{  
+#dropdown{
   width: 100%;
   height: 40px;
   border-radius: 8px;
   outline: none;
-  border: 2px solid var(--color-primary);
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  border: 2px solid;
+  box-shadow:var(--box-shadow)
 }
 /*order page dropdown hover over*/
 #dropdown:hover{
   cursor: pointer; 
 }
-
 /*order page radio button*/
 input[type=radio] {
     transform: scale(1.4);
-    -webkit-transform: scale(1.4);
-    -moz-transform: scale(1.4);
-    -ms-transform: scale(1.4);
-    -o-transform: scale(1.4);
 }
 
 input[type=radio]:hover{
@@ -1141,8 +917,4 @@ input[type=radio]:hover{
 /*order page submit  */
 #submit{
   width: 100%;
- 
- 
-}
-
-
+ }
