@@ -14,8 +14,8 @@
 :root {
   --color-white: #ffffff;
   --color-black: #000000;
-  --color-secondary: #1F3044;
-  --color-primary: #65929b;
+  --color-secondary:#1F3044;
+  --color-primary: linear-gradient(to left, #65929b, #39727d);
   --color-danger: rgb(232, 37, 37);
   --color-success: rgb(8, 138, 8);
   --transition: all 400ms ease;
@@ -39,6 +39,9 @@
 .btn:hover {
   background: var(--color-secondary) !important;
   color: var(--color-white) !important;
+}
+.btn a {
+ color: var(--color-white);
 }
 /*Title box  */
 .title-style {
@@ -92,7 +95,7 @@ body {
 
 /*Navigation section start here */
 #navigationBar {
-  box-shadow: 2px 3px 5px grey;
+  box-shadow: 2px 1px 1px rgb(108, 106, 106);
 
 }
 
@@ -223,11 +226,12 @@ span i:hover {
   transform: translate(-50%, -50%);
 } 
 /*banner section style on  carousel items*/
-.carousel-item{
+ .carousel-item img{
+  width: 100vw;
   height: 80vh !important;
-}
+} */
 /*banner section style on  carousel items heading*/
-h5{
+h3{
 font-size:3rem;
 text-shadow: 0px 0px 8px rgba(0, 2, 0, 1);
 
@@ -243,6 +247,10 @@ text-shadow: 0px 0px 8px rgba(0, 2, 0, 1);
 .menu {
   text-align: center;
   transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
 }
 
 /*menu section each course box when we hover over */
@@ -263,7 +271,7 @@ text-shadow: 0px 0px 8px rgba(0, 2, 0, 1);
  
 }
 .menu-img img{
- width:100%
+ width:100%;
 }
 /*Menu section button on images*/
 .btn-order{
@@ -280,6 +288,14 @@ text-shadow: 0px 0px 8px rgba(0, 2, 0, 1);
   transition:.6;
   opacity: 0;
   z-index: 1;
+  -webkit-transform: translate(-50% , 0);
+  -moz-transform: translate(-50% , 0);
+  -ms-transform: translate(-50% , 0);
+  -o-transform: translate(-50% , 0);
+  -webkit-transition:;
+  -moz-transition:;
+  -ms-transition:;
+  -o-transition:;
 }
 .btn-order a{
   color:var(--color-white) !important
@@ -289,7 +305,10 @@ text-shadow: 0px 0px 8px rgba(0, 2, 0, 1);
   transform: translate(-50% , 50%);
   bottom: 50%;
   opacity: 1;
-
+  -webkit-transform:;
+  -moz-transform:;
+  -ms-transform:;
+  -o-transform:;
 }
 /*Menu section overlay*/
 .overlay{
@@ -307,15 +326,26 @@ text-shadow: 0px 0px 8px rgba(0, 2, 0, 1);
   opacity: .5;
   height:100%;
 }
-
-
-
+.card{
+  border: none !important;
+}
+.card:hover{
+  border: 2px solid transparent !important;
+}
+.card-body{
+  background-color:#65929b !important;
+ color: var(--color-white);
+ 
+}
+.card img{
+  height:15rem
+}
 /*home page section  ends here */
 
 /*Banner section ends here */
 #banner{
   height: 90vh;
-  background-image: url(images/baner_2.jpg);
+  background-image: url(images/banner.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -324,12 +354,16 @@ text-shadow: 0px 0px 8px rgba(0, 2, 0, 1);
 }
 .banner-highlights{
   padding:70px 0;
-  background-color: rgba(0,0,0,0.6);
+  background-color:rgba(0, 0, 0, 0.7);
   text-align: center;
   color: #ffffff;
 }
 
-
+iframe{
+  width: 100%;
+  height: 70vh;
+  border:0;
+}
 
 
 
@@ -365,8 +399,8 @@ span i {
   .carousel-item{
     height: 50vh !important;
   } 
-  h5{
-    font-size:1.5rem;
+  h3{
+    font-size:1.2rem;
     
     
     }
@@ -410,7 +444,7 @@ span i {
   background-image: linear-gradient(to bottom,
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.6)),
-    url(images/about/about_banner.jpg);
+    url(images/about/about_baner.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -418,17 +452,11 @@ span i {
   color: #ffffff;
 
 }
-
-.about {
-  padding: 100px 0;
-
-}
-
 .about_about h2 {
 font-weight: 700;
   font-size: 3rem;
   text-align: center;
-  padding: 12rem;
+   padding: 12rem; 
 }
 
 
@@ -478,7 +506,7 @@ font-weight: 700;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  margin-top: 5rem
+  margin-top: 7rem
 }
 
 /*our chef card in about page */
@@ -510,7 +538,11 @@ font-weight: 700;
   border-radius: 50%;
   position: relative;
   margin: -3rem 0 3rem 0;
-  box-shadow:var(--box-shadow)
+  box-shadow:var(--box-shadow);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 /*our chef card  description  in about page */
@@ -564,7 +596,7 @@ font-weight: 700;
   background-image: linear-gradient(to bottom,
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.6)),
-    url(images/veg/veg_banner.jpg);
+    url(images/veg/img_1.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -572,12 +604,6 @@ font-weight: 700;
   color: #ffffff;
 
 }
-
-.about {
-  padding: 100px 0;
-
-}
-
 .veg_banner h2 {
 font-weight: 700;
   font-size: 3rem;
@@ -677,7 +703,7 @@ font-weight: 700;
 
 /*veg page start here */
 /*veg section style on id banner*/
-.veg_about {
+/* .veg_about {
   height: 85vh;
   background-image: linear-gradient(to bottom,
       rgba(0, 0, 0, 0.6),
@@ -690,20 +716,14 @@ font-weight: 700;
   color: #ffffff;
 
 }
-
-.about {
-  padding: 100px 0;
-
-}
-
 .veg_banner h2 {
 font-weight: 700;
   font-size: 3rem;
   text-align: center;
   padding: 12rem;
-}
+} */
 /*Media query for veg page for ipad/ talets screen start here*/
-@media only screen and (max-width: 1024px) {
+/* @media only screen and (max-width: 1024px) {
   .veg_about {
     height: 50vh;
   }
@@ -712,7 +732,7 @@ font-weight: 700;
     padding: 7rem;
     font-size: 2.2rem;
 }
-}
+} */
 
 
 /* non-veg page */
@@ -776,23 +796,27 @@ form {
   margin: 3rem auto;
   background: var(--color-white);
   border-radius: 1rem;
+  background-color: var(--color-secondary);
 }
 /* heading in form in log in page */
 form h2 {
   margin: .2rem auto .9rem;
-  color: var(--color-secondary)
+  color: var(--color-white)
 }
 /* image in form in log in page */
 img.avatar {
   width: 10rem;
   border-radius: 50%;
   margin: 0 auto;
+  border: 2px solid var(--color-white);
+  padding:1rem;
+  
 }
 /* label in form in log in page */
 label {
   display: block;
   margin-bottom: 2px;
-  color: var(--color-secondary);
+  color: var(--color-white);
 }
 /* input in form in log in page */
 form div input {
@@ -803,6 +827,7 @@ form div input {
   border: 2px solid var(--color-primary);
   padding: 0 30px;
   box-shadow: var(--box-shadow);
+  
 }
 /* input focus in log in page */
 input:focus {
@@ -1041,7 +1066,6 @@ footer hr {
    object-fit: cover;
   height: 300px;
   max-width: 100%;
-  border-radius:1rem;
   cursor: pointer;
 }
 .thumbnail img:hover {
@@ -1081,26 +1105,7 @@ footer hr {
 
 /*order page starts here */
 /*order page box section  */
-.intro{
- margin:5rem auto 1rem;
-max-width: 600px;
-color:var(--color-white)
- 
-}
-/*order page box title */
-#title{
-  text-align: center;
-  text-shadow: 2px 2px #000000;
-}
-/*order page firld */
 
-fieldset{
-  background-color: var(--color-white);
-  margin: 0rem auto;
-  max-width: 600px;
-  font-size: 20px;
-  padding: 40px;
-}
 /*order page dropdown selection*/
 #dropdown{  
   width: 100%;
@@ -1117,7 +1122,11 @@ fieldset{
 
 /*order page radio button*/
 input[type=radio] {
-    transform: scale(1.2);
+    transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    -o-transform: scale(1.4);
 }
 
 input[type=radio]:hover{
