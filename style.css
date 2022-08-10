@@ -231,6 +231,11 @@ text-shadow: 1px 1px 2px black;
  }
 .menu-img img{
  width:100%;
+ border-radius: 1rem;
+ -webkit-border-radius: 1rem;
+ -moz-border-radius: 1rem;
+ -ms-border-radius: 1rem;
+ -o-border-radius: 1rem;
 }
 /*Menu section button on images*/
 .btn-order{
@@ -247,9 +252,21 @@ text-shadow: 1px 1px 2px black;
   transition:var(--transition);
   opacity: 0;
   z-index: 1;
+  -webkit-transition:var(--transition);
+  -moz-transition:var(--transition);
+  -ms-transition:var(--transition);
+  -o-transition:var(--transition);
+  -webkit-transform: translate(-50% , 50%);
+  -moz-transform: translate(-50% , 50%);
+  -ms-transform: translate(-50% , 50%);
+  -o-transform: translate(-50% , 50%);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
 }
 .btn-order a{
-  color:var(--color-white) !important
+  color:var(--color-white) !important;
 }
 /*Menu section images and buuton hover over*/
 .menu-img:hover .btn-order{
@@ -266,10 +283,15 @@ text-shadow: 1px 1px 2px black;
  top:0;
  opacity: 0.5;
  transition:.5s ;
+ /* border-radius: 1rem; */
  -webkit-transition:.5s ;
  -moz-transition:.5s ;
  -ms-transition:.5s ;
  -o-transition:.5s ;
+ -webkit-border-radius: 1rem;
+ -moz-border-radius: 1rem;
+ -ms-border-radius: 1rem;
+ -o-border-radius: 1rem;
 }
 
 /*Menu section overlay hover over*/
@@ -279,14 +301,14 @@ text-shadow: 1px 1px 2px black;
 }
 .card{
   border: none !important;
+  width: 100%;
 }
 .card:hover{
   border: 2px solid transparent !important;
 }
 .card-body{
-  background-color:#65929b !important;
+ background-color:#65929b !important;
  color: var(--color-white);
- 
 }
 .card img{
   height:15rem
@@ -294,7 +316,7 @@ text-shadow: 1px 1px 2px black;
 /*home page section  ends here */
 /*Banner section ends here */
 #banner{
-  height: 90vh;
+  height: 500px;
   background-image: url(images/banner.jpg);
   background-position: center;
   background-size: cover;
@@ -307,6 +329,7 @@ text-shadow: 1px 1px 2px black;
   background-color:rgba(0, 0, 0, 0.7);
   text-align: center;
   color: #ffffff;
+ 
 }
 
 iframe{
@@ -458,6 +481,12 @@ font-weight: 700;
 .our_chef {
     margin-top: 3rem;
   }
+  .banner-highlights{
+   margin-top: 2rem;
+   
+  
+   
+  }
 }
 /*Media query for About page for mobile screen start here*/
 @media only screen and (max-width: 400px) {
@@ -492,7 +521,7 @@ font-weight: 700;
     height: 50vh;
   }
 .veg_banner h2 {
-        padding: 7rem;
+  padding: 9rem 4rem;
     font-size: 2.2rem;
 }
 }
@@ -711,6 +740,7 @@ footer h4 {
   letter-spacing: 1px;
   display: inline-block;
   margin-bottom: 2px;
+
 }
 /*footer  contact section */
 .contact-footer li i {
@@ -829,6 +859,12 @@ footer hr {
 .footer-bottom p {
     text-align: right;
   }
+  /* footer h4 {
+    margin-top: 10px;
+  } */
+footer ul{
+  padding-left: 0;
+}
 }
 @media only screen and (max-width: 400px) {
 
